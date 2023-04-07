@@ -11,7 +11,7 @@ fun main() {
 
     userID?.let { sendNotification(it) }
 
-    userID.let { sendNotification(it) } ?: run { println("아이디가 없습니다!") }
+   // userID.let { sendNotification(it) } ?: run { println("아이디가 없습니다!") }
 
     userID.let {
         println("$it 님에게 메세지를 보냈습니다.")

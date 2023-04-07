@@ -14,7 +14,7 @@ fun isOdd(x: Int): Boolean{
 val isOdd2: (Int) -> Boolean = fun(x: Int): Boolean {return x % 2 != 0} //홀수 check
 val isOdd3: (Int) -> Boolean = fun(x) = x % 2 != 0
 val isOdd4 = fun(x: Int): Boolean = x % 2 != 0 //함수 타입 생략
-val isOdd5: fun(Int) = x % 2 != 0 //람다식
+//val isOdd5: fun(x: Int) = x % 2 != 0 //람다식
 
 val isOdd6: (Int) -> Boolean = {x -> x % 2 != 0} //람다식
 

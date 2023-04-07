@@ -10,22 +10,23 @@ class NullElvisOperator2 {
     val sony = Person("손흥민", naver)
     val alex = Person("알렉스", null)
 
-    try {
+    /*try {
         printAddress(sony)
         printAddress(alex)
     } catch (e: IllegalArgumentException) {
         println(e.message)
     }
-}
+}*/
 
-fun printAddress(person: Person){
-    val address = person.company?.address
-        ?: throw IllegalArgumentException("주소가 없습니다.")
+    fun printAddress(person: Person) {
+        val address = person.company?.address
+            ?: throw IllegalArgumentException("주소가 없습니다.")
 
-    /** with(): 범위 지정 함수: 코드를 간결 작성하는 데 유용 */
-    with(address){
-        println("회사주소: $streetAddress")
-        println("우편번호: $zipCode")
-        println("수신자: ${person.name}")
+        /** with(): 범위 지정 함수: 코드를 간결 작성하는 데 유용 */
+        with(address) {
+            println("회사주소: $streetAddress")
+            println("우편번호: $zipCode")
+            println("수신자: ${person.name}")
+        }
     }
 }

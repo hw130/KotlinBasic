@@ -13,9 +13,9 @@ fun main() {
 }
 
 //최상위 함수
-fun outsideFunc(){
+/*fun outsideFunc(){
     global += 1
     val z = 500
     println("outsideFunc z: $z")
     println("outsideFunc global: $global")
-}
+}*/

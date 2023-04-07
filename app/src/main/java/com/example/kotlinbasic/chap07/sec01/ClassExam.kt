@@ -4,9 +4,9 @@ class Professor(_name: String, _age: Int){
     var name: String = _name
     var age: Int = _age
 
-    init{
+   /* init{
         this.name = if (_name.isNotEmpty() && _name.isNotBlank()) _name.uppercase()) else "GUEST"
-    }
+    }*/
 
     var major: String = "컴퓨터공학"
     constructor(_name: String, _age: Int, _major: String) : this(_name, _age){
